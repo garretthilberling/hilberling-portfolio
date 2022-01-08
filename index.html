@@ -9,11 +9,8 @@
     <body>
         <!-- begin navigation -->
         <header>
-            <div class="step-img">
-                <img controls width="100" src="./assets/images/profile-pic.JPG" alt="" />
-              </div>
             <h1>
-                <a href="/">Garrett Hilberling</a>
+                <a href="https://www.linkedin.com/in/garretthilberling/">Garrett Hilberling</a>
             </h1>
             <nav>
                 <ul>
@@ -24,82 +21,104 @@
                         <a href="#work">Work</a>
                       </li>
                       <li>
-                        <a href="#contact-me">Contact Me</a>
+                        <a href="#resume">Resume</a>
                       </li>
                       <li>
-                        <a href="#resume">Resume</a>
+                        <a href="#contact-me">Contact Me</a>
                       </li>
                 </ul>
             </nav>
         </header>
         <!-- end navigation -->
 
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>
+        <section id="about-me" class="about-me">
+            <div class="flex-row">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="profile-pic">
+                <img class="profile-pic" controls width="150px" src="./assets/images/profile-pic.JPG" alt="" />
+              </div>
+            <div class="flex-row">
+                <p>
                 I am a marketing student at UCF looking to make a career shift by working to become a full stack developer. 
                 My education in marketing and business will prove useful and especially applicable to front end development (e.g.: a digital marketing course that dealt with SEO in depth).
                 I graduate in Spring 2022 and will hopefully make it through the UCF Coding Bootcamp in one piece shortly thereafter!
-            </p>
+                </p>
+            </div>
         </section>
 
         <section id="work">
-            <h2>Work</h2>  
-            <div>
-            <a href="https://garretthilberling.github.io/run-buddy/">
-                <img src="./assets/images/run-buddy.png" alt="" /></a>
-                 <div class="bottom-left">
-                <h1>Run Buddy</h1>
-                <p>HTML, CSS</p>
-                </div>
-            </div>
+           <h2 class="section-title">Work</h2>  
 
-            <div class="featured-work">
-                <a href="https://garretthilberling.github.io/doja-cat-fanpage/">
-                    <img src="./assets/images/doja-fanpage.png" alt="" /></a>
-                     <div class="bottom-left">
-                    <h1>Doja Cat Fanpage</h1>
-                    <p>HTML, CSS</p>
+        <div class="my-work">
+               <div class="container">
+                <article class="featured-work">
+                    <a href="https://garretthilberling.github.io/run-buddy/">
+                    <img src="./assets/images/run-buddy.png" alt="Run-Buddy landing page using HTML and CSS." /></a>
+                    <div class="bottom-left">
+                        <h1>Run Buddy</h1>
+                        <p>HTML, CSS</p>
                     </div>
                 </div>
+            </article>
+        
+            <article class="work">
+                <div class="container">
+                    <a href="https://garretthilberling.github.io/doja-cat-fanpage/">
+                    <img src="./assets/images/doja-fanpage.png" alt="Doja Cat Fanpage using HTML and CSS" /></a>
+                    <div class="bottom-left">
+                        <h1>Doja Cat Fanpage</h1>
+                        <p>HTML, CSS</p>
+                    </div>
+                </div>
+            </article>
 
-            <div>
-                <a href="https://garretthilberling.github.io/watch-that-box-javascript/">
-                    <img src="./assets/images/watch-that-box.png" alt="" /></a>
-                     <div class="bottom-left">
+            <article class="work">
+                <div class="container">
+                    <a href="https://garretthilberling.github.io/watch-that-box-javascript/">
+                    <img src="./assets/images/watch-that-box.png" alt="Watch That Box Project using JavaScript" /></a>
+                    <div class="bottom-left">
                     <h1>Watch that Box</h1>
                     <p>JavaScript</p>
                     </div>
                 </div>
+            </article>
 
-            <div>
-            <a href="https://garretthilberling.github.io/student-bio/">
-                <img src="./assets/images/student-bio.png" alt="" /></a>
-                 <div class="bottom-left">
-                <h1>Student Bio Practice</h1>
-                <p>HTML, CSS</p>
+            <article class="work">
+                <div class="container">
+                    <a href="https://garretthilberling.github.io/student-bio/">
+                    <img src="./assets/images/student-bio.png" alt="Student Bio in-class practice using HTML and CSS" /></a>
+                    <div class="bottom-left">
+                    <h1>Student Bio Practice</h1>
+                    <p>HTML, CSS</p>
+                    </div>
                 </div>
-            </div>
+            </article>
 
-            <div>
-                <a href="https://garretthilberling.github.io/hilberling-challenge-1/">
-                    <img src="./assets/images/code-refactor.png" alt="" /></a>
-                     <div class="bottom-left">
+            <article class="work">
+                <div class="container">
+                    <a href="https://garretthilberling.github.io/hilberling-challenge-1/">
+                    <img src="./assets/images/code-refactor.png" alt="Code refactor using HTML and CSS" /></a>
+                    <div class="bottom-left">
                     <h1>Code Refactor</h1>
                     <p>HTML, CSS</p>
                     </div>
                 </div>
+            </article>
+        </div>
         </section>
 
         <section id="resume">
-            <h2>Resume</h2>
+            <h2 class="section-title">Resume</h2>
+            <a href="assets/images/resume.pdf">My Resume</a>
         </section>
 
         <section id="contact-me">
-            <h2>Contact Me</h2>
+            <h2 class="section-title">Contact Me</h2>
             <ul>
                 <li>Phone: 111-222-3333</li>
                 <li>Email: <a href="ghilberling@knights.ucf.edu">ghilberling@knights.ucf</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/garretthilberling/">LinkedIn</a></li>
                 <li>GitHub: <a href="https://github.com/garretthilberling">GitHub</a></li>
             </ul>
         </section>
