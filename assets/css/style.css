@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+  }
+
+  header div img {
+    border-radius: 1000px;
+  }
