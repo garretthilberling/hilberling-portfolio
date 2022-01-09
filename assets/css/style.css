@@ -3,7 +3,8 @@
     --secondary-color: #3E00FF;
     --tertiary-color: #AE00FB;
     --quaternary-color: #B5FFD9;
-    --senary-color: #ffe608;
+    --senary-color: #FFCDDD;
+    --septenary-color: #DADDFC;
   }
 
   * {
@@ -14,7 +15,7 @@
   
   body {
     color: var(--secondary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Georgia, Helvetica, Times New Roman, Arial, sans-serif;
   }  
 
   header {
@@ -60,7 +61,7 @@
   }
   
   header nav ul li a:hover {
-    background: var(--primary-color);
+    background: var(--senary-color);
     color: var(--secondary-color);
     border-radius: 15px;
   }
@@ -78,15 +79,23 @@
   .profile-pic img {
     border-radius: 1000px;
     min-width: 150px;
+    border: 3px solid var(--tertiary-color);
+  }
+
+  .profile-pic img:hover {
+      min-width: 350px;
   }
 
   .about-me {
       background-color: var(--quaternary-color);
   }
 
-.about-me p {
+.about-me-description {
     padding: 15px 30px 15px 30px;
-    display: flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .section-title {
@@ -99,19 +108,34 @@
     width: 50%;
   }
 
-  /* .my-work { 
+  .my-work-section {
+    background-color: var(--septenary-color);
+  }
+
+  .my-work { 
+    max-width: 100%;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  } */
+    /* align-items: space-between;
+    justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    
+  }
+
+  .border-box {
+    padding: 10px;
+    box-sizing: border-box;  
+  }
 
   .featured-work { 
       padding: 10px 10px 10px 10px;
+      flex: 1;
 
   }
 
   .featured-work img {
-      max-width: 70%;
+      max-width: 60%;
       min-width: 50%;
       opacity: 70%;
       border-radius: 25px;
@@ -123,13 +147,30 @@
       opacity: 100%;
   }
 
+  .work-1 {
+    flex: 1;
+  }
+
+  .work-2 {
+    flex: 1;
+}
+
+.work-3 {
+    flex: 1;
+}
+
+.work-4 {
+    flex: 1;
+}
+
+
   .work {
     padding: 10px 10px 10px 10px;
   }
 
   .work img {
-    max-width: 40%;
-    min-width: 30%;
+    max-width: 30%;
+    min-width: 20%;
     opacity: 70%;
     border-radius: 25px;
     border: 7px solid var(--tertiary-color);
@@ -143,8 +184,6 @@
     position: relative;
     text-align: left;
     color: var(--tertiary-color);
-    display: flex;
-    justify-content: center;
   }
   
   .bottom-left {
@@ -157,8 +196,13 @@
     border: 3px solid var(--tertiary-color);
   }
 
+
   .flex-row {
     display: flex;
+  }
+
+  .my-resume {
+      background-color: var(--senary-color);
   }
 
   .resume {
@@ -176,16 +220,46 @@
       opacity: 100%;
   }
 
+  .contact-me {
+      background-color: var(--quaternary-color);
+  }
+
   .contact-info {
     display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   color: var(--primary-color);
   font-size: 24px;
   padding: 20px 20px 20px 20px;
   }
 
-  .contact-info ul li a {
-      font-style: normal;
+  .contact-info {
+    list-style: none;
+    color: var(--secondary-color);
+    background-color: var(--quaternary-color);
+  }
+
+  .contact-info a {
+    text-decoration: none;
+  }
+
+  footer {
+      background: var(--tertiary-color);
+      padding: 40px 35px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      color: var(--primary-color);
+  }
+
+  .made-with-love {
+      border: 3px solid var(--primary-color);
+      border-radius: 25px;
+      padding: 15px 15px 15px 15px;
+      background-color: var(--septenary-color);
+  }
+
+  .heart-emoji {
+      font-weight: 100;
   }
