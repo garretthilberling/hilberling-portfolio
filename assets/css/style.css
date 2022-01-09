@@ -63,7 +63,7 @@
   header nav ul li a:hover {
     background: var(--senary-color);
     color: var(--secondary-color);
-    border-radius: 15px;
+    border-radius: 2000px;
   }
   
   .border-left {
@@ -284,6 +284,10 @@
         color: var(--secondary-color);
         background: var(--senary-color);
         border-radius: 2000px; 
+      }
+
+      header nav ul li a:hover {
+        background: white;
       }
 
       .about-me {
