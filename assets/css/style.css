@@ -275,6 +275,10 @@
         justify-content: center;
       }
 
+      header nav ul li {
+        margin: 10px 10px 10px 10px;
+      }
+
       header nav ul li a {
         font-size: 20px;
         color: var(--secondary-color);
@@ -296,7 +300,11 @@
   }
 
   @media screen and (max-width: 768px) {
-      .bottom-left {
+    header nav ul li {
+      margin: 15px 15px 15px 15px;
+    }
+      
+    .bottom-left {
           position: static;
           background: transparent;
           border: none;
