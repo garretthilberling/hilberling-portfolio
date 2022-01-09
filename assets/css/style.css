@@ -304,5 +304,7 @@
 }
 
 @media screen and (max-width: 575px) {
-      /* I found that the preceding queries were sufficient for this screen size. */
+      header nav ul li {
+        margin: 20px 20px 20px 20px;
+      }
 }
