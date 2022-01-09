@@ -92,10 +92,16 @@
 
 .about-me-description {
     padding: 15px 30px 15px 30px;
+    text-align: center;
+    max-width: 80%;
+    border: 3px solid var(--tertiary-color);
+    border-radius: 25px;
+}
+
+.about-me-description-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .section-title {
@@ -110,74 +116,6 @@
 
   .my-work-section {
     background-color: var(--septenary-color);
-  }
-
-  .my-work { 
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* align-items: space-between;
-    justify-content: space-between; */
-    /* flex-wrap: wrap; */
-    
-  }
-
-  .border-box {
-    padding: 10px;
-    box-sizing: border-box;  
-  }
-
-  .featured-work { 
-      padding: 10px 10px 10px 10px;
-      flex: 1;
-
-  }
-
-  .featured-work img {
-      max-width: 60%;
-      min-width: 50%;
-      opacity: 70%;
-      border-radius: 25px;
-      border: 7px solid var(--tertiary-color);
-      
-  }
-
-  .featured-work img:hover {
-      opacity: 100%;
-  }
-
-  .work-1 {
-    flex: 1;
-  }
-
-  .work-2 {
-    flex: 1;
-}
-
-.work-3 {
-    flex: 1;
-}
-
-.work-4 {
-    flex: 1;
-}
-
-
-  .work {
-    padding: 10px 10px 10px 10px;
-  }
-
-  .work img {
-    max-width: 30%;
-    min-width: 20%;
-    opacity: 70%;
-    border-radius: 25px;
-    border: 7px solid var(--tertiary-color);
-  }
-
-  .work img:hover {
-      opacity: 100%;
   }
 
   .container {
@@ -196,6 +134,55 @@
     border: 3px solid var(--tertiary-color);
   }
 
+  .featured-work { 
+      padding: 10px 10px 10px 10px;
+  }
+
+  .featured-work img {
+      max-width: 60vw;
+      min-width: 40vw;
+      opacity: 70%;
+      border-radius: 25px;
+      border: 7px solid var(--tertiary-color); 
+  }
+
+  .featured-work img:hover {
+      opacity: 100%;
+  }
+
+  .work {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .work img {
+    max-width: 40vw;
+    min-width: 20vw;
+    opacity: 70%;
+    border-radius: 25px;
+    border: 7px solid var(--tertiary-color);
+  }
+
+  .work img:hover {
+      opacity: 100%;
+  }
+
+  .my-work { 
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px auto auto auto;
+    list-style: none;
+  }
+
+    .border-box {
+        box-sizing: border-box;  
+      }
+
+    .work-flex {
+        flex: 1;
+    }
 
   .flex-row {
     display: flex;
@@ -225,23 +212,29 @@
   }
 
   .contact-info {
+    max-width: 90vw;
     display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  color: var(--primary-color);
-  font-size: 24px;
-  padding: 20px 20px 20px 20px;
-  }
-
-  .contact-info {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--primary-color);
+    font-size: 24px;
+    padding: 20px 5px 20px 5px;
+    margin: 30px auto auto auto;
     list-style: none;
     color: var(--secondary-color);
     background-color: var(--quaternary-color);
+    border: 3px solid var(--tertiary-color);
+    border-radius: 35px;
+    flex: 1;
   }
 
   .contact-info a {
     text-decoration: none;
+  }
+
+  .contact-img {
+    max-height: 2.55vw;
   }
 
   footer {
@@ -263,3 +256,53 @@
   .heart-emoji {
       font-weight: 100;
   }
+
+  @media screen and (max-width: 980px) {
+      header {
+          justify-content: center;
+          position: relative;
+          padding-bottom: 0;
+      }
+
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      header nav ul li a {
+        font-size: 20px;
+        color: var(--secondary-color);
+        background: var(--senary-color);
+        border-radius: 2000px; 
+      }
+
+      .about-me {
+          font-size: 24px;
+      }
+
+      .contact-info {
+          flex-direction: column;
+      }
+
+      .contact-info img {
+          max-height: 8vw;    
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+      .bottom-left {
+          position: static;
+          background: transparent;
+          border: none;
+      }
+}
+
+@media screen and (max-width: 575px) {
+      /* I found that the preceding queries were sufficient for this screen size. */
+}

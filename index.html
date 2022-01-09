@@ -38,7 +38,7 @@
             <div class="profile-pic">
                 <img class="profile-pic" controls width="150px" src="./assets/images/profile-pic.JPG" alt="" />
               </div>
-            <div class="flex-row">
+            <div class="about-me-description-flex">
                 <p class="about-me-description">
                 I am a marketing student at UCF looking to make a career shift by working to become a full stack developer. 
                 My education in marketing and business will prove useful and especially applicable to front end development (e.g.: a digital marketing course that dealt with SEO in depth).
@@ -51,9 +51,9 @@
         <!-- my work -->
         <section class="my-work-section" id="work">
            <h2 class="section-title">Work</h2>
-        <div class="my-work">
-            <div class="border-box">
-                <article class="featured-work">
+        <ul class="my-work">
+            <li>
+                <article class="featured-work border-box work-flex">
                 <div class="container">
                     <a href="https://garretthilberling.github.io/run-buddy/">
                     <img src="./assets/images/run-buddy.png" alt="Run-Buddy landing page using HTML and CSS." /></a>
@@ -63,8 +63,10 @@
                     </div>
                 </div>
                 </article>
-        
-            <article class="work work-1">
+            </li>
+
+            <li>
+            <article class="work border-box work-flex">
                 <div class="container">
                     <a href="https://garretthilberling.github.io/doja-cat-fanpage/">
                     <img src="./assets/images/doja-fanpage.png" alt="Doja Cat Fanpage using HTML and CSS" /></a>
@@ -74,8 +76,10 @@
                     </div>
                 </div>
             </article>
+            </li>
 
-            <article class="work work-2">
+            <li>
+                <article class="work border-box work-flex">
                 <div class="container">
                     <a href="https://garretthilberling.github.io/watch-that-box-javascript/">
                     <img src="./assets/images/watch-that-box.png" alt="Watch That Box Project using JavaScript" /></a>
@@ -84,9 +88,11 @@
                     <p>JavaScript</p>
                     </div>
                 </div>
-            </article>
+                </article>
+            </li>
 
-            <article class="work work-3">
+            <li>
+                <article class="work border-box work-flex">
                 <div class="container">
                     <a href="https://garretthilberling.github.io/student-bio/">
                     <img src="./assets/images/student-bio.png" alt="Student Bio in-class practice using HTML and CSS" /></a>
@@ -95,9 +101,11 @@
                     <p>HTML, CSS</p>
                     </div>
                 </div>
-            </article>
+                </article>
+            </li>
 
-            <article class="work work-4">
+            <li>
+                <article class="work border-box work-flex">
                 <div class="container">
                     <a href="https://garretthilberling.github.io/hilberling-challenge-1/">
                     <img src="./assets/images/code-refactor.png" alt="Code refactor using HTML and CSS" /></a>
@@ -106,10 +114,9 @@
                     <p>HTML, CSS</p>
                     </div>
                 </div>
-            </article>
-
-            </div>
-        </div>
+                </article>
+            </li>
+        </ul>
         </section>
 
         <!-- my resume -->
@@ -123,16 +130,18 @@
         <!-- contact info -->
         <section class="contact-me" id="contact-me">
             <h2 class="section-title">Contact Me</h2>
+        <div>
             <ul class="contact-info">
                 <li>P: 111-222-3333</li>
-                <li>E: <a href="ghilberling@knights.ucf.edu">ghilberling@knights.ucf</a></li>
-                <li><a href="https://www.linkedin.com/in/garretthilberling/">
-                    <img controls height=50px src="./assets/images/linkedin-logo.png" alt="Follow the link for my LinkedIn."/>
+                <li class=>E: <a href="ghilberling@knights.ucf.edu">ghilberling@knights.ucf</a></li>
+                <li class="contact-flex"><a href="https://www.linkedin.com/in/garretthilberling/">
+                    <img class="contact-img" src="./assets/images/linkedin-logo.png" alt="Follow the link for my LinkedIn."/>
                 </a></li>
-                <li><a href="https://github.com/garretthilberling">
-                    <img controls height=50px src="./assets/images/github-logo.png" alt="Follow the link for my GitHub."/>
+                <li class="contact-flex"><a href="https://github.com/garretthilberling">
+                    <img class="contact-img" src="./assets/images/github-logo.png" alt="Follow the link for my GitHub."/>
                 </a></li>
             </ul>
+        </div>
         </section>
 
         <!-- super original footer -->
