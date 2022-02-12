@@ -15,7 +15,7 @@
   
   body {
     color: var(--secondary-color);
-    font-family: Georgia, Helvetica, Times New Roman, Arial, sans-serif;
+    font-family: 'Dosis', sans-serif;
   }  
 
   header {
@@ -57,7 +57,7 @@
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 32px;
   }
   
   header nav ul li a:hover {
@@ -91,11 +91,12 @@
   }
 
 .about-me-description {
-    padding: 15px 30px 15px 30px;
-    text-align: center;
-    max-width: 80%;
-    border: 3px solid var(--tertiary-color);
-    border-radius: 25px;
+  padding: 15px 30px 15px 30px;
+  text-align: center;
+  max-width: 80%;
+  border: 3px solid var(--tertiary-color);
+  border-radius: 25px;
+  font-size: 22px;
 }
 
 .about-me-description-flex {
@@ -107,7 +108,7 @@
 .section-title {
     color: var(--primary-color);
     border-bottom: 3px solid var(--tertiary-color);
-    font-size: 36px;
+    font-size: 38px;
     padding: 20px 0 20px 0;
     text-align: center;
     margin: 0 auto 35px auto;
